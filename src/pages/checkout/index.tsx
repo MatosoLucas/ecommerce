@@ -16,7 +16,7 @@ export default function Checkout() {
       <Flex align="center" justify="center" flexDirection="column" flex="1">
         <Flex maxW="335px" w="100%" flexDirection="column">
           <CreditCardBox />
-          <Flex pt="16" >
+          <Flex pt="16" pb="4" >
             <Link href="/checkout/success">
               <Button h="70px" bgColor="#25C0C0" color="#FFFFFF" maxW="335px" w="100%" align="center" justify="center" fontWeight="bold" fontSize="24px">Pay</Button>
             </Link>
