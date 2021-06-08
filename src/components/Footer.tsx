@@ -1,6 +1,6 @@
-import { Box, HStack, Text, VStack } from "@chakra-ui/react";
+import { Box, HStack, Text, VStack } from '@chakra-ui/react'
 
-export function Footer() {
+export function Footer () {
   return (
     <Box h="100px" bgColor="#262626">
       <HStack spacing="4px" justify="center" fontWeight="bold">

@@ -1,10 +1,10 @@
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
-import { CartItems } from "../../components/CartItems";
-import { Footer } from "../../components/Footer";
-import { Header } from "../../components/Header";
+import { Box, Button, Flex, Text } from '@chakra-ui/react'
+import { CartItems } from '../../components/CartItems'
+import { Footer } from '../../components/Footer'
+import { Header } from '../../components/Header'
 import Link from 'next/link'
 
-export default function Cart() {
+export default function Cart () {
   return (
     <Flex minHeight="100vh" flexDirection="column" >
       <Header />

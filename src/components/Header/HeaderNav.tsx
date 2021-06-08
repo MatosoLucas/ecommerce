@@ -1,8 +1,8 @@
-import { HStack, Icon } from "@chakra-ui/react";
+import { HStack, Icon } from '@chakra-ui/react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 
-export function HeaderNav() {
+export function HeaderNav () {
   return (
     <HStack
       spacing="6"

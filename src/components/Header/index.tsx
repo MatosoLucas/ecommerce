@@ -1,8 +1,8 @@
-import { Flex } from "@chakra-ui/layout";
-import { HeaderNav } from "./HeaderNav";
-import { HeaderLogo } from "./HLogo";
+import { Flex } from '@chakra-ui/layout'
+import { HeaderNav } from './HeaderNav'
+import { HeaderLogo } from './HLogo'
 
-export function Header() {
+export function Header () {
   return (
     <Flex as="header" w="100%" bgColor="#000000">
       <HeaderLogo />

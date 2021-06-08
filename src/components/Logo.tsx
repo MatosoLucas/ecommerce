@@ -1,6 +1,6 @@
-import { Box, HStack, Text, VStack } from "@chakra-ui/react";
+import { Box, HStack, Text, VStack } from '@chakra-ui/react'
 
-export function Logo() {
+export function Logo () {
   return (
     <Box fontWeight="bold" position="relative">
     <HStack spacing="4px" justify="center">

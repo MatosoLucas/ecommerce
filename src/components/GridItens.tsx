@@ -1,8 +1,8 @@
-import { Box, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Image, SimpleGrid, Text } from '@chakra-ui/react'
 
-export function GridItens() {
+export function GridItens () {
   return (
-    <SimpleGrid columns={[2,4]} spacing={0} align="center" maxW="container.md" mx="auto">
+    <SimpleGrid columns={[2, 4]} spacing={0} align="center" maxW="container.md" mx="auto">
       <Box p={4}>
         <Image src="./images/worldwide.png" />
         <Text mt="22px" align="center" justify="center" fontSize="18px">Shipping worldwide</Text>

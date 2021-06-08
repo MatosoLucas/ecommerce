@@ -1,6 +1,6 @@
-import { Text } from "@chakra-ui/react";
+import { Text } from '@chakra-ui/react'
 
-export function HeaderLogo() {
+export function HeaderLogo () {
   return (
         <Text
           fontWeight="bold"

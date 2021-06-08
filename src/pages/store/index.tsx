@@ -1,9 +1,9 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
-import { CardBox } from "../../components/Card/CardBox";
-import { Footer } from "../../components/Footer";
-import { Header } from "../../components/Header";
+import { Box, Flex, Text } from '@chakra-ui/react'
+import { CardBox } from '../../components/Card/CardBox'
+import { Footer } from '../../components/Footer'
+import { Header } from '../../components/Header'
 
-export default function Items() {
+export default function Items () {
   return (
     <Flex minHeight="100vh" flexDirection="column">
       <Header />
@@ -14,7 +14,7 @@ export default function Items() {
       <Flex align="center" justify="center" flex="1" pt="16" pb="16">
         <CardBox />
       </Flex>
-      
+
       <Footer />
     </Flex>
   )
