@@ -16,11 +16,12 @@ interface CartContextData {
   addProduct: (productId: number) => Promise<void>;
   removeProduct: (productId: number) => void;
   updateProductAmount: ({ productId, amount }: UpdateProductAmount) => void;
+  setCart: (Array: Product[]) => void;
 }
 
 const CartContext = createContext<CartContextData>({} as CartContextData)
 
-export function CartProvider ({ children }: CartProviderProps) {
+export function CartProvider({ children }: CartProviderProps) {
   const [cart, setCart] = useState<Product[]>(() => {
     const storagedCart = typeof window !== 'undefined' ? localStorage.getItem('@Ecommerce:cart') : null
 
@@ -90,14 +91,14 @@ export function CartProvider ({ children }: CartProviderProps) {
 
   return (
     <CartContext.Provider
-      value={{ cart, addProduct, removeProduct, updateProductAmount }}
+      value={{ cart, addProduct, removeProduct, updateProductAmount, setCart }}
     >
       {children}
     </CartContext.Provider>
   )
 }
 
-export function useCart (): CartContextData {
+export function useCart(): CartContextData {
   const context = useContext(CartContext)
 
   return context
